@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>GreenEquip - Sales</title>
+        <!-- Ggoogle-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kalam:wght@300;400;700&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/tractor-farm-fresh.ico" />
+        <!-- Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class = "gradient-bg">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#!"> <img class="custom-img-size" src="assets/tractor-farm-fresh.ico" alt="..." />GreenEquip</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link"  href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="sales.html">Sales</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <form class="d-flex" action="cart.html">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            Cart
+                            <span class="badge bg-dark text-white ms-1 rounded-pill"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class=" py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white ">
+                <img src="assets/tractor-farm-fresh.ico" alt="..." /> 
+                <h1 class="display-4 fw-bolder" >Equipment Sales</h1>
+            </div>
+        </div>
+        </header>
+        <!-- List -->
+        <section class="py-5">
+            <div class="container mt-5">
+                <div class="row">
+                    <!-- Product 1 -->
+                    <div class="col-12 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="assets/Harvesters.jpg" class="product-image">
+                                <h5 class="card-title">John Deere S770 Combine Harvester</h5>
+                                <p class="card-text fs-6 text-muted">
+                                    A high-performance combine harvester designed for large-scale farming operations. 
+                                    It features advanced threshing and cleaning systems, a 13.6-liter engine, and the HarvestSmart automatic feed rate control for maximizing efficiency. 
+                                    The S770 is equipped with a spacious cab, intuitive controls, and precision agriculture technology for improved productivity and data management.</p>
+                                <p class="card-text">Price: $400,000.00</p>
+                                <button class="btn btn-outline-dark mt-auto" onclick="addToCart({ id: 1, name: 'John Deere S770 Combine Harvester', price: 400000.00 })">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>       
+                    <!-- Product 2 -->
+                    <div class="col-12 mb-3">
+                        <div class="card">                           
+                            <div class="card-body">
+                                <img src="assets/Shovel.jpg" class="product-image">
+                                <h5 class="card-title">Ames Long Handle Garden Shovel</h5>
+                                <p class="card-text fs-6 text-muted">
+                                    A versatile tool designed for digging, planting, and moving soil. 
+                                    It features a durable steel blade for effective digging and a 48-inch long hardwood handle that provides leverage and reduces strain on the back. 
+                                    The shovel's pointed tip allows for easy penetration into tough soil, making it ideal for garden beds, landscaping, and general outdoor tasks.                                
+                                </p>
+                                <p class="card-text">Price: $30.00</p>
+                                <button class="btn btn-outline-dark mt-auto" onclick="addToCart({ id: 2, name: 'Ames Long Handle Garden Shovel', price: 30.00 })">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="col-12 mb-3">
+                        <div class="card">                           
+                            <div class="card-body">
+                                <img src="assets/MilkingMachine.jpg" class="product-image">
+                                <h5 class="card-title">Delaval VMS V300 Milking System</h5>
+                                <p class="card-text fs-6 text-muted">
+                                    An advanced automatic milking machine designed for dairy farms of various sizes. 
+                                    It allows cows to be milked on their own schedule, enhancing animal welfare and productivity. 
+                                    The system features intelligent cow identification, precise milk flow measurement, and automatic cleaning processes, ensuring high milk quality and efficiency. 
+                                    With its user-friendly interface, farmers can easily monitor and manage milking operations.                        
+                                </p>
+                                <p class="card-text">Price: $150,000.00</p>
+                                <button class="btn btn-outline-dark mt-auto" onclick="addToCart({ id: 3, name: 'Milking Machine', price: 150000.00 })">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="col-12 mb-3">
+                        <div class="card">                           
+                            <div class="card-body">
+                                <img src="assets/Machete.jpg" class="product-image">
+                                <h5 class="card-title">Corona 18-Inch Machete</h5>
+                                <p class="card-text fs-6 text-muted">
+                                    A robust cutting tool designed for clearing brush, harvesting crops, and performing various outdoor tasks. 
+                                    It features a high-carbon steel blade for durability and sharpness, along with a comfortable rubber grip handle that provides a secure hold during use. 
+                                    The machete's lightweight design and long blade make it effective for chopping through dense vegetation with ease.                        
+                                </p>
+                                <p class="card-text">Price: $25.00</p>
+                                <button class="btn btn-outline-dark mt-auto" onclick="addToCart({ id: 4, name: 'Corona 18-Inch Machete', price: 25.00 })">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>       
+                    <!-- Product 5 -->
+                    <div class="col-12 mb-3">
+                        <div class="card">                           
+                            <div class="card-body">
+                                <img src="assets/BackhoeLoader.jpg" class="product-image">
+                                <h5 class="card-title">BCaterpillar 420XTC Backhoe Loader</h5>
+                                <p class="card-text fs-6 text-muted">
+                                    A versatile backhoe loader designed for construction, landscaping, and utility work. 
+                                    It features a powerful Cat C3.4B engine, advanced hydraulic systems, and a durable loader and backhoe attachment for efficient digging, lifting, and loading operations. 
+                                    The spacious cab is designed for operator comfort and visibility, and the machine's compact design allows for maneuverability in tight spaces.                       
+                                </p>
+                                <p class="card-text">Price: $70,000.00</p>
+                                <button class="btn btn-outline-dark mt-auto" onclick="addToCart({ id: 5, name: 'Caterpillar 420XTC Backhoe Loader', price: 70000.00 })">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 6 -->
+                    <div class="col-12 mb-3">
+                        <div class="card">                           
+                            <div class="card-body">
+                                <img src="assets/Rakes.jpg" class="product-image">
+                                <h5 class="card-title">Garden Way Steel Rake</h5>
+                                <p class="card-text fs-6 text-muted">
+                                    A sturdy and versatile gardening tool designed for leveling soil, spreading mulch, and clearing debris. 
+                                    It features a durable steel head with tines that are effective for breaking up compacted soil and raking leaves, while the hardwood handle provides a comfortable grip and solid control. 
+                                    This rake is ideal for both garden maintenance and landscaping tasks.                       
+                                </p>
+                                <p class="card-text">Price: $25.00</p>
+                                <button class="btn btn-outline-dark mt-auto" onclick="addToCart({ id: 6, name: 'Garden Way Steel Rake', price: 25.00 })">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 7 -->
+                    <div class="col-12 mb-3">
+                        <div class="card">                           
+                            <div class="card-body">
+                                <img src="assets/TrailersWagons.jpg" class="product-image">
+                                <h5 class="card-title">TBig Tex 14GX Utility Trailer</h5>
+                                <p class="card-text fs-6 text-muted">
+                                    A durable and versatile utility trailer designed for hauling various types of cargo, including equipment, landscaping materials, 
+                                    and recreational vehicles. It features a heavy-duty steel frame, a treated wood floor, and a 2-inch coupler for easy towing. 
+                                    The trailer is equipped with a loading ramp for convenient access and has a payload capacity of up to 3,500 pounds, making it suitable 
+                                    for both personal and commercial use.                       
+                                </p>
+                                <p class="card-text">Price: $2,500.00</p>
+                                <button class="btn btn-outline-dark mt-auto" onclick="addToCart({ id: 7, name: 'Big Tex 14GX Utility Trailer', price: 2500.00 })">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 8 -->
+                    <div class="col-12 mb-3">
+                        <div class="card">                           
+                            <div class="card-body">
+                                <img src="assets/Transplanter.jpg" class="product-image">
+                                <h5 class="card-title">EarthWay 1001-B 6-Row Seeder/Transplanter</h5>
+                                <p class="card-text fs-6 text-muted">
+                                    A medium-sized, versatile seeder and transplanter designed for planting a variety of seeds and seedlings with ease. 
+                                    This hand-pushed equipment features a six-row planting system, allowing for efficient and precise planting in rows. 
+                                    Its adjustable seed plates accommodate different seed sizes, and the sturdy construction ensures durability for years of use in 
+                                    gardens and small farms.                      
+                                </p>
+                                <p class="card-text">Price: $250.00</p>
+                                <button class="btn btn-outline-dark mt-auto" onclick="addToCart({ id: 8, name: 'EarthWay 1001-B 6-Row Seeder/Transplanter', price: 250.00 })">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>         
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <!--Copyright -->
+                    <div class="col-md-6 text-center text-md-start mb-0">
+                        <p class="m-0 text-white">Copyright &copy; Yousra 2024. All Rights Reserved.</p>
+                    </div>
+                    <!-- Contact Details -->
+                    <div class="col-md-6 text-center text-md-end">
+                        <p class="text-white mb-1">Contacts: +249 123 456 789 | info@greenequip.com</p>
+                        <div>
+                            <a href="https://www.linkedin.com/in/yousra-a-5026151b5/" class="text-white me-3" target="_blank">
+                                <i class="bi bi-linkedin"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com/yousraagoub" class="text-white" target="_blank">
+                                <i class="bi bi-github"></i> GitHub
+                            </a>                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

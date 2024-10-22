@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>GreenEquip - Homepage</title>
+        <!-- Ggoogle-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kalam:wght@300;400;700&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/tractor-farm-fresh.ico" />
+        <!-- Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class = "gradient-bg ">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="about.html"> <img class="custom-img-size" src="assets/tractor-farm-fresh.ico"/>GreenEquip</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sales.html">Sales</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <form class="d-flex" action="cart.html">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            Cart
+                            <span class="badge bg-dark text-white ms-1 rounded-pill"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class=" py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white ">
+                        <img src="assets/tractor-farm-fresh.ico" alt="..." /> 
+                        <h1 class="display-4 fw-bolder" >GreenEquip</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Empowering Farmers with Innovative Agricultural Equipment</p>
+                </div>
+            </div>
+        </header>
+        <!-- Section-->
+        <section class="py-1">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white p-4  custom-bg card">
+                    <p class="text-center fs-4">
+                        GreenEquip is dedicated to providing state-of-the-art agricultural equipment that boosts productivity 
+                        and promotes sustainable farming practices founded in Sudan. 
+                        <button type="button" class="btn btn-outline-light mt-3" onclick="window.location.href='about.html';">More</button>
+                    </p>  
+                </div>                
+            </div>
+            <div class="container px-4 px-lg-5 mt-5 py-5">
+                <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
+                                <!-- Product 1 -->
+                                <div class="col mb-5">
+                                    <div class="card h-100">
+                                        <img class="card-img-top" src="assets/Harvesters.jpg" alt="Harvesters" />
+                                        <div class="card-body p-4 text-center">
+                                            <h5 class="fw-bolder">John Deere S770 Combine Harvester</h5>
+                                            $400,000.00
+                                        </div>
+                                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                            <div class="text-center">
+                                                <a class="btn btn-outline-dark mt-auto" onclick="addToCart({ id: 1, name: 'John Deere S770 Combine Harvester', price: 400000.00 })">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product 2 -->
+                                <div class="col mb-5">
+                                    <div class="card h-100">
+                                        <img class="card-img-top" src="assets/Shovel.jpg" alt="Shovel" />
+                                        <div class="card-body p-4 text-center">
+                                            <h5 class="fw-bolder">Ames Long Handle Garden Shovel</h5>
+                                            $30.00
+                                        </div>
+                                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                            <div class="text-center">
+                                                <a class="btn btn-outline-dark mt-auto" onclick="addToCart({ id: 2, name: 'Ames Long Handle Garden Shovel', price: 30.00 })">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
+                                <!-- Product 3 -->
+                                <div class="col mb-5">
+                                    <div class="card h-100">
+                                        <img class="card-img-top" src="assets/MilkingMachine.jpg" alt="Milking Machine" />
+                                        <div class="card-body p-4 text-center">
+                                            <h5 class="fw-bolder">Delaval VMS V300 Milking System</h5>
+                                            $150,000.00
+                                        </div>
+                                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                            <div class="text-center">
+                                                <a class="btn btn-outline-dark mt-auto" onclick="addToCart({ id: 3, name: 'Delaval VMS V300 Milking System', price: 150000.00 })">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product 4 -->
+                                <div class="col mb-5">
+                                    <div class="card h-100">
+                                        <img class="card-img-top" src="assets/Machete.jpg" alt="Machete" />
+                                        <div class="card-body p-4 text-center">
+                                            <h5 class="fw-bolder">Corona 18-Inch Machete</h5>
+                                            $25.00
+                                        </div>
+                                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                            <div class="text-center">
+                                                <a class="btn btn-outline-dark mt-auto" onclick="addToCart({ id: 4, name: 'Corona 18-Inch Machete', price: 25.00 })">Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>   
+                </div>
+                <button type="button" class="btn btn-outline-light mt-3 mx-auto d-block   custom-bg " onclick="window.location.href='sales.html';">
+                    All Sales
+                </button>
+            </div>
+            <div class="container px-4 px-lg-5 my-5 py-5">
+                <div class="text-center text-white p-4  custom-bg card">
+                    <p class="text-center fs-4">
+                        GreenEquip provides a variety of services for farmers, 
+                        including personalized consultations,
+                        maintenance services, training programs, spare parts supply, and more.
+                        <button type="button" class="btn btn-outline-light mt-3" onclick="window.location.href='services.html';">More</button>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <footer class="py-5 bg-dark">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <!--Copyright -->
+                    <div class="col-md-6 text-center text-md-start mb-0">
+                        <p class="m-0 text-white">Copyright &copy; Yousra 2024. All Rights Reserved.</p>
+                    </div>
+                    <!-- Contact Details -->
+                    <div class="col-md-6 text-center text-md-end">
+                        <p class="text-white mb-1">Contacts: +249 123 456 789 | info@greenequip.com</p>
+                        <div>
+                            <a href="https://www.linkedin.com/in/yousra-a-5026151b5/" class="text-white me-3" target="_blank">
+                                <i class="bi bi-linkedin"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com/yousraagoub" class="text-white" target="_blank">
+                                <i class="bi bi-github"></i> GitHub
+                            </a>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

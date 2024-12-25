@@ -1,0 +1,84 @@
+.gradient-bg {
+  background: linear-gradient(120deg, #a8e063, #56ab2f, #004e92);
+  background-size: 300% 300%; /* Increase the background size for animation */
+  animation: gradient-animation 10s ease infinite; /* Set animation duration and repeat */
+}
+@keyframes gradient-animation {
+  0% {
+      background-position: 0% 50%; /* Starting position */
+  }
+  50% {
+      background-position: 100% 50%; /* Middle position */
+  }
+  100% {
+      background-position: 0% 50%; /* End position */
+  }
+}
+body {
+  font-family:'Merienda', cursive;;
+}
+.custom-img-size {
+  width: 50px;
+  height: 50px;
+}
+.product-image {
+  width: 150px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+  float: left; /* Align to the left */
+  margin-right: 15px; /* Space between the image and text */
+}
+.mission-vision {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+.core-values {
+  padding: 40px 20px;
+  background-color: #e9ecef;
+  border-radius: 8px;
+}
+.service-card {
+  margin-bottom: 30px;
+}
+.service-icon {
+  font-size: 50px;
+  color: #28a745; /* Green color for the icons */
+  margin-bottom: 15px;
+}
+.contact-info {
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.contact-info h5 {
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  margin-bottom: 5px;
+}
+
+.carousel-item {
+  text-align: center; /* Center align product details */
+}
+
+.card {
+  transition: transform 0.2s; /* Smooth transition */
+}
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+.custom-bg {
+  background-color: rgba(255, 255, 255, 0.1); /* Dark semi-transparent background */
+}
+
+.gap {
+  margin-bottom: 600px; /* Adjust the value as needed */
+}
+
+html {
+  scroll-behavior: smooth;
+}
